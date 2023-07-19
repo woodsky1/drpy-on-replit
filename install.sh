@@ -10,7 +10,7 @@ wget -O replit.nix https://github.com/sxbai/drpy-on-replit/raw/master/replit.nix
 cd ..
 wget -O main.py https://github.com/sxbai/drpy-on-replit/raw/master/main.py
 wget https://github.com/sxbai/drpy-on-replit/raw/master/fix.sh
-wget https://github.com/hjdhnx/dr_py/archive/refs/heads/main.zip
+wget https://agit.ai/lem85930/drpy/archive/main.zip
 nix-env -iA nixpkgs.unzip
 unzip main.zip && mv dr_py-main/* .
 cp -r build/.replit . && cp -r build/replit.nix .
