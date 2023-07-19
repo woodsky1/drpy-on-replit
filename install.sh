@@ -5,11 +5,11 @@ rm -rf public/ && rm -rf templates/
 nix-env -iA nixpkgs.wget
 mkdir build
 cd build
-wget -O .replit https://github.com/sxbai/drpy-on-replit/raw/master/.replit
-wget -O replit.nix https://github.com/sxbai/drpy-on-replit/raw/master/replit.nix
+wget -O .replit https://raw.githubusercontent.com/woodsky1/drpy-on-replit/master/.replit
+wget -O replit.nix https://raw.githubusercontent.com/woodsky1/drpy-on-replit/master/replit.nix
 cd ..
-wget -O main.py https://github.com/sxbai/drpy-on-replit/raw/master/main.py
-wget https://github.com/sxbai/drpy-on-replit/raw/master/fix.sh
+wget -O main.py https://raw.githubusercontent.com/woodsky1/drpy-on-replit/master/main.py
+wget https://raw.githubusercontent.com/woodsky1/drpy-on-replit/master/fix.sh
 wget https://agit.ai/lem85930/drpy/archive/main.zip
 nix-env -iA nixpkgs.unzip
 unzip main.zip && mv dr_py-main/* .
